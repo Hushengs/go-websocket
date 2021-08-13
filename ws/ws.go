@@ -103,7 +103,6 @@ func (c *Client) Write() {
 				c.Socket.WriteMessage(websocket.CloseMessage, []byte{})
 				return
 			}
-
 			c.Socket.WriteMessage(websocket.TextMessage, message)
 		}
 	}
